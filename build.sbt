@@ -7,3 +7,8 @@ scalaVersion := "2.13.1"
 scalaJSUseMainModuleInitializer := true
 
 libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.9.8"
+libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.9.6"
+
+skip in packageJSDependencies := false
+jsDependencies +=
+  "org.webjars" % "jquery" % "2.2.1" / "jquery.js" minified "jquery.min.js"
